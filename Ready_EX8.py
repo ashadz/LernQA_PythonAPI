@@ -13,7 +13,7 @@ print('tkn = ', tkn,'  sec = ', sec)
 
 code = 400
 while code != 200 or strtest != 'Job is ready':  # Это спасает от невзгод
-    time.sleep(sec-4)
+    time.sleep(sec)
     response = requests.get(url_zapros, params={"token": tkn})
     json_object = response.json()
     print(response.status_code)
