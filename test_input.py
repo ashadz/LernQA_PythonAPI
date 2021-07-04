@@ -1,5 +1,4 @@
 import pytest
-import requests
 
 def test_assert_task():
     phrase = input("Set a phrase: ")
